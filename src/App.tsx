@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavigationBar from "./components/Navigate/NavigationBar";
+import ScrollTop from "./components/ScrollTop";
+import HomePage from "./pages/HomePage";
+import LoadPage from "./pages/LoadPage";
 
-function App() {
+const App: React.FunctionComponent = () => {
+  const ArcodianPage = lazy(() => import("./pages/ArcodianPage"));
+  const GridPage = lazy(() => import("./pages/GridPage"));
+  const SlidePage = lazy(() => import("./pages/SlidePage"));
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <div className="relative font-sanfransisco">
+        <NavigationBar />
+        <Suspense fallback={<LoadPage />}>
+          <ScrollTop>
+            <div className="relative z-50 text-[11px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/arcodian" element={<ArcodianPage />} />
+                <Route path="/grid" element={<GridPage />} />
+                <Route path="/slide" element={<SlidePage />} />
+              </Routes>
+            </div>
+          </ScrollTop>
+        </Suspense>
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
