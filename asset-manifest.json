@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/FrontEndPractice/static/css/main.e1e319ca.css",
+    "main.js": "/FrontEndPractice/static/js/main.a98c6870.js",
+    "static/js/863.e71e2f31.chunk.js": "/FrontEndPractice/static/js/863.e71e2f31.chunk.js",
+    "static/js/937.c32b736e.chunk.js": "/FrontEndPractice/static/js/937.c32b736e.chunk.js",
+    "static/css/427.e081ff9d.chunk.css": "/FrontEndPractice/static/css/427.e081ff9d.chunk.css",
+    "static/js/427.744a67c5.chunk.js": "/FrontEndPractice/static/js/427.744a67c5.chunk.js",
+    "static/js/787.c1137a95.chunk.js": "/FrontEndPractice/static/js/787.c1137a95.chunk.js",
+    "static/js/116.18d25b54.chunk.js": "/FrontEndPractice/static/js/116.18d25b54.chunk.js",
+    "index.html": "/FrontEndPractice/index.html",
+    "main.e1e319ca.css.map": "/FrontEndPractice/static/css/main.e1e319ca.css.map",
+    "main.a98c6870.js.map": "/FrontEndPractice/static/js/main.a98c6870.js.map",
+    "863.e71e2f31.chunk.js.map": "/FrontEndPractice/static/js/863.e71e2f31.chunk.js.map",
+    "937.c32b736e.chunk.js.map": "/FrontEndPractice/static/js/937.c32b736e.chunk.js.map",
+    "427.e081ff9d.chunk.css.map": "/FrontEndPractice/static/css/427.e081ff9d.chunk.css.map",
+    "427.744a67c5.chunk.js.map": "/FrontEndPractice/static/js/427.744a67c5.chunk.js.map",
+    "787.c1137a95.chunk.js.map": "/FrontEndPractice/static/js/787.c1137a95.chunk.js.map",
+    "116.18d25b54.chunk.js.map": "/FrontEndPractice/static/js/116.18d25b54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1e319ca.css",
+    "static/js/main.a98c6870.js"
+  ]
+}
