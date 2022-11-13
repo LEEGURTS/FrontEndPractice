@@ -5,7 +5,7 @@ import Layout from "../components/Layout/Layout";
 const HomePage: React.FunctionComponent = () => {
   return (
     <React.Fragment>
-      <Layout>
+      <Layout bgColor="EEEEEE">
         <Home />
       </Layout>
     </React.Fragment>

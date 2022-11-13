@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import HomeIconSlide from "./HomeIconSlide/HomeIconSlide";
 import HomeGridSlide from "./HomeGridSlide/HomeGridSlide";
+import { HomeSkillGridItemList } from "./HomeGridSlide/HomeSkillGridItemList";
+import { HomeWhatDidGridItemList } from "./HomeGridSlide/HomeWhatDidGridItemList";
+
 const Home: React.FunctionComponent = () => {
   const iconVariants = {
     out: {
@@ -30,19 +33,19 @@ const Home: React.FunctionComponent = () => {
   };
   return (
     <motion.div
-      className="w-[calc(100%+4em)] overflow-x-hidden min-h-screen flex flex-col items-center bg-[#EEEEEE]"
+      className="w-full min-h-screen flex flex-col items-center"
       variants={box}
       initial="out"
       animate="in"
     >
       <motion.header
         variants={iconVariants}
-        className="w-full text-[0.9em] bg-white py-4 flex items-center justify-center"
+        className="w-[calc(100%+4.5em)] text-[0.9em] bg-white py-4 flex items-center justify-center"
       >
         생각나는대로 열심히 업데이트중.
       </motion.header>
       <main className="w-full flex flex-col items-center">
-        <section className="m-8 w-full flex flex-row items-center justify-around ">
+        <section className="m-8 w-[80%] flex flex-row items-center justify-between ">
           <motion.article
             variants={iconVariants}
             className="text-[3em] font-bold"
@@ -56,7 +59,14 @@ const Home: React.FunctionComponent = () => {
           </motion.aside>
         </section>
         <HomeIconSlide />
-        <HomeGridSlide slideTitle="다양한 언어로." />
+        <HomeGridSlide
+          slideTitle="다양한 언어로."
+          skillList={HomeSkillGridItemList}
+        />
+        <HomeGridSlide
+          slideTitle="어떤걸 해왔는지."
+          skillList={HomeWhatDidGridItemList}
+        />
       </main>
     </motion.div>
   );
