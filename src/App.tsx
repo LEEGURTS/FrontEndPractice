@@ -9,6 +9,7 @@ const App: React.FunctionComponent = () => {
   const ArcodianPage = lazy(() => import("./pages/ArcodianPage"));
   const GridPage = lazy(() => import("./pages/GridPage"));
   const SlidePage = lazy(() => import("./pages/SlidePage"));
+  const TyphoGraphyPage = lazy(() => import("./pages/TyphoGraphyPage"));
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="relative font-sanfransisco">
@@ -21,6 +22,7 @@ const App: React.FunctionComponent = () => {
                 <Route path="/arcodian" element={<ArcodianPage />} />
                 <Route path="/grid" element={<GridPage />} />
                 <Route path="/slide" element={<SlidePage />} />
+                <Route path="/typhography" element={<TyphoGraphyPage />} />
               </Routes>
             </div>
           </ScrollTop>

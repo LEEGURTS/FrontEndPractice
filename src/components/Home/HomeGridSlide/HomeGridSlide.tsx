@@ -1,5 +1,4 @@
 import React from "react";
-import { HomeSkillGridItemList } from "./HomeSkillGridItemList";
 import HomeGrid from "./HomeGrid";
 
 interface HomeGridSlideProps {
@@ -18,6 +17,7 @@ const HomeGridSlide: React.FunctionComponent<HomeGridSlideProps> = ({
         {skillList.map((item) => {
           return (
             <HomeGrid
+              key={item.img}
               title={item.title}
               imgPath={item.img}
               content={item.content}

@@ -31,6 +31,12 @@ const NavigationBar: React.FunctionComponent = () => {
       >
         Slide
       </button>
+      <button
+        onClick={() => navigate("/typhography")}
+        className="hover:bg-slate-700 duration-300 p-[5px] rounded-[5px]"
+      >
+        Typho
+      </button>
     </div>
   );
 };
